@@ -1,0 +1,315 @@
+/* fonts (be sure to change "font-family" in the body css below)
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+/* template theme colors (uncomment to use different color scheme) */
+
+/* dark scheme */
+:root {
+  --primary-color: #1F2937;
+  --secondary-color: #374151;
+  --font-color: #d0d0d0;
+  --hover-color: #fff;
+}
+
+/* brown scheme */
+/*
+:root {
+  --primary-color: #713f12;
+  --secondary-color: #854d0e;
+  --font-color: #d0d0d0;
+  --hover-color: #fff;
+}
+*/
+
+/* red scheme */
+/*
+:root {
+  --primary-color: #991b1b;
+  --secondary-color: #b91c1c;
+  --font-color: #dcdcdc;
+  --hover-color: #fff;
+}
+*/
+
+/* green scheme */
+/*
+:root {
+  --primary-color: #166534;
+  --secondary-color: #15803d;
+  --font-color: #d0d0d0;
+  --hover-color: #fff;
+}
+*/
+
+/* blue scheme */
+/*
+:root {
+  --primary-color: #1e3a8a;
+  --secondary-color: #1e40af;
+  --font-color: #d0d0d0;
+  --hover-color: #fff;
+}
+*/
+
+/* violet scheme */
+/*
+:root {
+  --primary-color: #5b21b6;
+  --secondary-color: #6d28d9;
+  --font-color: #d0d0d0;
+  --hover-color: #fff;
+}
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+main a,
+main a:visited,
+main a:active {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.container {
+  background: var(--primary-color);
+}
+
+header a,
+footer a {
+  text-decoration: none;
+  color: var(--font-color);
+  transition: all 0.3s ease 0s;
+}
+
+li a:hover {
+  color: var(--hover-color);
+  transition: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 1200px;
+}
+
+nav ul,
+nav li {
+  display: inline-block;
+}
+
+nav li {
+  padding: 0 0 0 1rem;
+  font-size: 1.2rem;
+}
+
+nav li a:hover {
+  border-bottom: 0.1rem solid var(--hover-color);
+}
+
+.brand {
+  font-size: 2rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.line {
+  width: 20px;
+  height: 3px;
+  margin-bottom: 4px;
+  background: var(--font-color);
+}
+
+main {
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 1200px;
+  font-size: 1.2rem;
+}
+
+.main-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+a.button-solid,
+a.button-solid:visited,
+a.button-solid:focus {
+  display: inline-block;
+  outline: 0;
+  border: .1rem solid var(--primary-color);
+  cursor: pointer;
+  background: var(--primary-color);
+  border-radius: .25rem;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.6rem;
+  text-decoration: none;
+}
+
+a.button-solid:hover {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+a.button-outline,
+a.button-outline:focus {
+  display: inline-block;
+  outline: 0;
+  border: .1rem solid var(--primary-color);
+  cursor: pointer;
+  border-radius: .25rem;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1.6rem;
+  text-decoration: none;
+}
+
+a.button-outline:visited {
+  background: #fff;
+}
+
+a.button-outline:hover {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: #fff;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer ul,
+footer li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 1.8rem;
+}
+
+.footer-box h2 {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--font-color);
+}
+
+.footer-box:nth-child(1) {
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+}
+
+.logo-svg {
+  width: 2.5rem;
+  padding: 0.5rem;
+  border-radius: 9999px;
+  background: var(--secondary-color);
+  stroke: var(--font-color);
+}
+
+.logo-text {
+  padding-left: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--font-color);
+}
+
+.copyright {
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--font-color);
+  background: var(--secondary-color);
+}
+
+/* media queries */
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+  }
+
+  .brand {
+    width: 100%;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    padding: 10px 10px 5px 10px;
+    top: 38px;
+    right: 36px;
+    cursor: pointer;
+    border: 1px solid var(--font-color);
+    border-radius: 4px;
+    background: var(--secondary-color);
+  }
+
+  .nav-list {
+    display: none;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    list-style-type: none;
+  }
+
+  .nav-list .list-item {
+    display: block;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--font-color);
+    cursor: pointer;
+  }
+
+  .list-item:hover {
+    background: var(--secondary-color);
+  }
+
+  .active {
+    display: block;
+  }
+
+  footer {
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-box:nth-child(1) {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .footer-box h2 {
+    margin-top: 0;
+  }
+}
