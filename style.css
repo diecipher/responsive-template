@@ -26,14 +26,14 @@
 */
 
 /* red scheme */
-/*
+
 :root {
   --primary-color: #991b1b;
   --secondary-color: #b91c1c;
   --font-color: #dcdcdc;
   --hover-color: #fff;
 }
-*/
+
 
 /* green scheme */
 /*
@@ -75,14 +75,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-main a,
-main a:visited,
-main a:active {
-  color: var(--primary-color);
-  font-weight: 600;
-  text-decoration: underline;
-}
-
 .container {
   background: var(--primary-color);
 }
@@ -115,7 +107,6 @@ nav li {
 
 nav li {
   padding: 0 0 0 1rem;
-  font-size: 1.2rem;
 }
 
 nav li a:hover {
@@ -141,13 +132,88 @@ main {
   margin: 0 auto;
   padding: 2rem;
   max-width: 1200px;
-  font-size: 1.2rem;
 }
 
 .main-title {
   font-size: 1.8rem;
   font-weight: 700;
 }
+
+main a,
+main a:visited,
+main a:active {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+
+.classes {
+  margin-left: .5rem;
+  padding: 0 .5rem;
+  font-weight: 600;
+  background: #eee;
+  border-radius: 0.2rem;
+}
+
+
+
+.grid-box {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card-solid,
+.card-outline {
+  display: flex;
+  align-items: flex-start;
+  padding: 1.5rem;
+  text-align: left;
+  border-radius: 0.5rem;
+  border: .1rem solid var(--primary-color);
+}
+
+.card-solid {
+  color: #fff;
+  background: var(--primary-color);
+}
+
+.card-solid-svg,
+.card-outline-svg {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: middle;
+  margin-right: 0.75rem;
+}
+
+.card-solid-svg {
+  color: #fff;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card-desc {
+  margin-top: .4rem;
+}
+
+a.card-link,
+a.card-link:visited {
+  color: #fff;
+  background: var(--primary-color);
+}
+
+.card-outline-svg {
+  color: var(--primary-color);
+}
+
+
+
+
+
+
 
 a.button-solid,
 a.button-solid:visited,
@@ -159,8 +225,6 @@ a.button-solid:focus {
   background: var(--primary-color);
   border-radius: .25rem;
   padding: .5rem 1rem;
-  font-size: 1rem;
-  font-weight: 700;
   color: #fff;
   line-height: 1.6rem;
   text-decoration: none;
@@ -179,8 +243,6 @@ a.button-outline:focus {
   cursor: pointer;
   border-radius: .25rem;
   padding: .5rem 1rem;
-  font-size: 1rem;
-  font-weight: 700;
   color: var(--primary-color);
   line-height: 1.6rem;
   text-decoration: none;
